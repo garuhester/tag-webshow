@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>医疗标签展示</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/multilevelmenu.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-4.2.2.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/yiliao.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/swiper-4.2.2.min.js"></script>
+    <style>
+    .swiper-button-next {
+        background-image: url(./img/right.png);
+    }
+
+    .swiper-button-prev {
+        background-image: url(./img/left.png);
+    }
+    </style>
+</head>
+
+<body>
+    <!--  -------------------- 页面 -------------------- -->
+    <div id="pt-main" class="pt-perspective">
+        <!-- 医院 -->
+        <div class="pt-page pt-page-1">
+            <div class="banner">
+                <div class="title">医院</div>
+            </div>
+            <img class="bg" src="./img/yiyuan.jpg" alt="">
+            <div class="box yiyuan-xz">
+                <div class="title">行政办公楼</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box yiyuan-zy">
+                <div class="title">住院楼</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box yiyuan-mz">
+                <div class="title">门诊</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------门诊-------------------- -->
+        <!-- 门诊 -->
+        <div class="pt-page pt-page-2">
+            <div class="banner">
+                <img class="back back-menzhen" src="./img/back.png" alt="">
+                <div class="title">门诊</div>
+            </div>
+            <img class="bg" src="./img/1.jpg" alt="">
+            <div class="box menzhen-yf">
+                <div class="title">药房</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box menzhen-jyk">
+                <div class="title">检验科</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box menzhen-pys">
+                <div class="title">门诊配液室</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 药房 -->
+        <div class="pt-page pt-page-3">
+            <div class="banner">
+                <img class="back back-yaofang" src="./img/back.png" alt="">
+                <div class="title">药房</div>
+            </div>
+            <img class="bg" src="./img/15.jpg" alt="">
+            <div class="box yaofang-gjs">
+                <div class="title">高警示药品标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box yaofang-yp">
+                <div class="title">药品标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box yaofang-yz">
+                <div class="title">医嘱处方标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 检验科 -->
+        <div class="pt-page pt-page-4">
+            <div class="banner">
+                <img class="back back-jianyan" src="./img/back.png" alt="">
+                <div class="title">检验科</div>
+            </div>
+            <img class="bg" src="./img/7.jpg" alt="">
+            <div class="box jianyan-5s">
+                <div class="title">5S桌面定位标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jianyan-sg">
+                <div class="title">试管条码标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box jianyan-tp">
+                <div class="title">医疗专用贴标打印机</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 门诊配液室 -->
+        <div class="pt-page pt-page-5">
+            <div class="banner">
+                <img class="back back-peiye" src="./img/back.png" alt="">
+                <div class="title">门诊配液室</div>
+            </div>
+            <img class="bg" src="./img/13.jpg" alt="">
+            <div class="box peiye-dai">
+                <div class="title">输液袋/瓶标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box peiye-he">
+                <div class="title">配液盒标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box peiye-wd">
+                <div class="title">医疗专用腕带打印机</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box peiye-tb">
+                <div class="title">医疗专用贴标打印机</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------门诊------------------- -->
+        <!--  --------------------住院楼-------------------- -->
+        <!-- 住院楼 -->
+        <div class="pt-page pt-page-6">
+            <div class="banner">
+                <img class="back back-zhuyuan" src="./img/back.png" alt="">
+                <div class="title">住院楼</div>
+            </div>
+            <img class="bg" src="./img/2.jpg" alt="">
+            <div class="box zhuyuan-fw">
+                <div class="title">医疗废物
+                    <br>暂存室</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zhuyuan-jjc">
+                <div class="title">抢救车
+                    <br>治疗车</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zhuyuan-bf">
+                <div class="title">病房</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zhuyuan-sss">
+                <div class="title">手术室</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zhuyuan-wsj">
+                <div class="title">卫生间</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zhuyuan-hsz">
+                <div class="title">护士站</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 护士站 -->
+        <div class="pt-page pt-page-7">
+            <div class="banner">
+                <img class="back back-hushi" src="./img/back.png" alt="">
+                <div class="title">护士站</div>
+            </div>
+            <img class="bg" src="./img/6.jpg" alt="">
+            <div class="box hushi-py">
+                <div class="title">住院部配液室</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box hushi-qjc">
+                <div class="title">抢救车、治疗车</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box hushi-blc">
+                <div class="title">病历车</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box hushi-wp">
+                <div class="title">物品标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box hushi-wd">
+                <div class="title">医疗专用
+                    <br>腕带打印机</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 住院部配液室 -->
+        <div class="pt-page pt-page-8">
+            <div class="banner">
+                <img class="back back-zy-peiye" src="./img/back.png" alt="">
+                <div class="title">住院部配液室</div>
+            </div>
+            <img class="bg" src="./img/14.jpg" alt="">
+            <div class="box zy-peiye-tb">
+                <div class="title">医疗专用
+                    <br>贴标打印机</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zy-peiye-wp">
+                <div class="title">物品标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zy-peiye-syd">
+                <div class="title">输液袋/瓶标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zy-peiye-syh">
+                <div class="title">配液盒标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 抢救车、治疗车 -->
+        <div class="pt-page pt-page-9">
+            <div class="banner">
+                <img class="back back-zlche" src="./img/back.png" alt="">
+                <div class="title">抢救车、治疗车</div>
+            </div>
+            <img class="bg" src="./img/4.jpg" alt="">
+            <div class="box zlche-qj">
+                <div class="title">抢救药品标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zlche-yp">
+                <div class="title">药品标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zlche-dm">
+                <div class="title">地面定位标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 抢救车、治疗车2 -->
+        <div class="pt-page pt-page-9-2">
+            <div class="banner">
+                <img class="back back-zlche-2" src="./img/back.png" alt="">
+                <div class="title">抢救车、治疗车</div>
+            </div>
+            <img class="bg" src="./img/4.jpg" alt="">
+            <div class="box zlche-qj">
+                <div class="title">抢救药品标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zlche-yp">
+                <div class="title">药品标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box zlche-dm">
+                <div class="title">地面定位标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 病房 -->
+        <div class="pt-page pt-page-10">
+            <div class="banner">
+                <img class="back back-bingfang" src="./img/back.png" alt="">
+                <div class="title">病房</div>
+            </div>
+            <img class="bg" src="./img/9.jpg" alt="">
+            <div class="box bingfang-ctk">
+                <div class="title">床头卡标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box bingfang-kg">
+                <div class="title">开关标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box bingfang-zc">
+                <div class="title">资产标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 手术室 -->
+        <div class="pt-page pt-page-11">
+            <div class="banner">
+                <img class="back back-shoushu" src="./img/back.png" alt="">
+                <div class="title">手术室</div>
+            </div>
+            <img class="bg" src="./img/16.jpg" alt="">
+            <div class="box shoushu-xd">
+                <div class="title">二级血袋标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box shoushu-mj">
+                <div class="title">灭菌指示标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 医疗废物暂存室 -->
+        <div class="pt-page pt-page-12">
+            <div class="banner">
+                <img class="back back-feiwu" src="./img/back.png" alt="">
+                <div class="title">医疗废物暂存室</div>
+            </div>
+            <img class="bg" src="./img/8.jpg" alt="">
+            <div class="box feiwu-xsy">
+                <div class="title">洗手液标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box feiwu-hj">
+                <div class="title">环境标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box feiwu-dm">
+                <div class="title">地面定位标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 卫生间 -->
+        <div class="pt-page pt-page-13">
+            <div class="banner">
+                <img class="back back-weisheng" src="./img/back.png" alt="">
+                <div class="title">卫生间</div>
+            </div>
+            <img class="bg" src="./img/11.jpg" alt="">
+            <div class="box weisheng-xsy">
+                <div class="title">洗手液标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box weisheng-hj">
+                <div class="title">环境标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box weisheng-dm">
+                <div class="title">地面定位标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------住院部--------------------- -->
+        <!--  --------------------行政办公楼--------------------- -->
+        <!-- 行政办公楼 -->
+        <div class="pt-page pt-page-14">
+            <div class="banner">
+                <img class="back back-xingzheng" src="./img/back.png" alt="">
+                <div class="title">行政办公楼</div>
+            </div>
+            <img class="bg" src="./img/xingz.jpg" alt="">
+            <div class="box xingzheng-kf">
+                <div class="title">库房</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box xingzheng-sj">
+                <div class="title">数据机房</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box xingzheng-rs">
+                <div class="title">人事办公室</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 人事办公室 -->
+        <div class="pt-page pt-page-15">
+            <div class="banner">
+                <img class="back back-renshi" src="./img/back.png" alt="">
+                <div class="title">人事办公室</div>
+            </div>
+            <img class="bg" src="./img/5.jpg" alt="">
+            <div class="box renshi-wp">
+                <div class="title">物品标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box renshi-5s">
+                <div class="title">5S文件定位标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box renshi-gd">
+                <div class="title">固定自产标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box renshi-p50">
+                <div class="title">P50A-2N打印机
+                    <br>图片及参数</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box renshi-kg">
+                <div class="title">开关标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 库房 -->
+        <div class="pt-page pt-page-16">
+            <div class="banner">
+                <img class="back back-kufang" src="./img/back.png" alt="">
+                <div class="title">库房</div>
+            </div>
+            <img class="bg" src="./img/3.jpg" alt="">
+            <div class="box kufang-hj">
+                <div class="title">货架标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box kufang-dm">
+                <div class="title">地面定位标识</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 数据机房 -->
+        <div class="pt-page pt-page-17">
+            <div class="banner">
+                <img class="back back-shuju" src="./img/back.png" alt="">
+                <div class="title">数据机房</div>
+            </div>
+            <img class="bg" src="./img/10.jpg" alt="">
+            <div class="box shuju-zxj">
+                <div class="title">走线架标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box shuju-xl">
+                <div class="title">线缆标签、机架标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box shuju-p50">
+                <div class="title">P50A-2N打印机
+                    <br>参数及图片</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!-- 5s文件定位标识 -->
+        <div class="pt-page pt-page-18">
+            <div class="banner">
+                <img class="back back-5s" src="./img/back.png" alt="">
+                <div class="title">5s文件定位标识</div>
+            </div>
+            <img class="bg" src="./img/12.jpg" alt="">
+            <div class="box s-5s">
+                <div class="title">5S彩色定位标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box s-wp">
+                <div class="title">物品标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+            <div class="box s-wjj">
+                <div class="title">文件夹名称标签</div>
+                <img class="pos" src="./img/pos.png" alt="">
+            </div>
+        </div>
+        <!--  --------------------行政办公楼--------------------- -->
+    </div>
+    <!--  -------------------- 页面 -------------------- -->
+
+    <!--  -------------------- 标签 -------------------- -->
+    <div>
+        <!-- 药房 -->
+        <div class="mask mask-yaofang-gjs">
+            <div class="swiper-container-yaofang-gjs sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">高警示药品标签</div>
+                        <div class="box">
+                            <img src="./tag/高警示药品标签.png" alt="">
+                            <img src="./tag/高警示药品标签2.png" alt="">
+                        </div>
+                        <div class="footer"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-yaofang-yp">
+            <div class="swiper-container-yaofang-yp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">药品标签</div>
+                        <div class="box">
+                            <img src="./tag/药品标签.png" alt="">
+                            <img src="./tag/药品标签1.png" alt="">
+                            <img src="./tag/药品标签2.png" alt="">
+                        </div>
+                        <div class="footer">17mm * 70mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">药品标签</div>
+                        <div class="box">
+                            <img src="./tag/药品标签3.png" alt="">
+                            <img src="./tag/药品标签4.png" alt="">
+                            <img src="./tag/药品标签5.png" alt="">
+                        </div>
+                        <div class="footer">17mm * 70mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">药品标签</div>
+                        <div class="mbox">
+                            <div class="size"><img src="./tag/药品标签6.png" alt=""></div>
+                            <div class="size"><img src="./tag/药品标签7.png" alt=""></div>
+                            <div class="size"><img src="./tag/药品标签8.png" alt=""></div>
+                            <div class="size"><img src="./tag/药品标签9.png" alt=""></div>
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">药品标签</div>
+                        <div class="mbox">
+                            <div class="size"><img src="./tag/药品标签10.png" alt=""></div>
+                            <div class="size"><img src="./tag/药品标签11.png" alt=""></div>
+                            <div class="size"><img src="./tag/药品标签12.png" alt=""></div>
+                            <div class="size"><img src="./tag/药品标签13.png" alt=""></div>
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-yaofang-yz">
+            <div class="swiper-container-yaofang-yz sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">医嘱处方标签</div>
+                        <div class="box">
+                            <img src="./tag/医嘱处方标签.png" alt="">
+                        </div>
+                        <div class="footer">50mm * 30mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 检验科 -->
+        <div class="mask mask-jianyan-5s">
+            <div class="swiper-container-jianyan-5s sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">5S桌面定位标识</div>
+                        <div class="mbox">
+                            <div class="size" style="width: 60%;"><img src="./tag/5s1.png" alt="" style="padding-top:40px;"></div>
+                            <div class="size" style="width: 40%;"><img src="./tag/5s.png" alt="" style="padding-top:20px;"></div>
+                        </div>
+                        <div class="footer">30mm * 10mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">5S桌面定位标识</div>
+                        <div class="box">
+                            <img src="./tag/定位.png" alt="" style="width: 50%;">
+                            <img src="./tag/5s2.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">30mm * 10mm</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-jianyan-sg">
+            <div class="swiper-container-jianyan-sg sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">试管条码标签</div>
+                        <div class="box">
+                            <img src="./tag/试管条码标签.png" alt="">
+                        </div>
+                        <div class="footer">50mm * 30mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">医疗专用贴标打印机</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/tp60.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>抗菌材质&nbsp;&nbsp;&nbsp;院感无忧</li>
+                                    <li>自动测纸&nbsp;&nbsp;&nbsp;即开即用</li>
+                                    <li>高速宽幅&nbsp;&nbsp;&nbsp;简单快速</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2" style="margin-top: -20px;">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热敏</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(标配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙(选配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wifi(选配)</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：80mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：150mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：外接电源适配器</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-jianyan-tp">
+            <div class="swiper-container-jianyan-tp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">医疗专用贴标打印机</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/tp60.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>抗菌材质&nbsp;&nbsp;&nbsp;院感无忧</li>
+                                    <li>自动测纸&nbsp;&nbsp;&nbsp;即开即用</li>
+                                    <li>高速宽幅&nbsp;&nbsp;&nbsp;简单快速</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2" style="margin-top: -20px;">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热敏</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(标配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙(选配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wifi(选配)</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：80mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：150mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：外接电源适配器</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 门诊配液室 -->
+        <div class="mask mask-peiye-dai">
+            <div class="swiper-container-peiye-dai sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">输液袋/瓶标签</div>
+                        <div class="box">
+                            <img src="./tag/输液袋瓶标签.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">50mm * 70mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">输液袋/瓶标签</div>
+                        <div class="box">
+                            <img src="./tag/输液袋瓶标签1.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">50mm * 30mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">医疗专用贴标打印机</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/tp60.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>抗菌材质&nbsp;&nbsp;&nbsp;院感无忧</li>
+                                    <li>自动测纸&nbsp;&nbsp;&nbsp;即开即用</li>
+                                    <li>高速宽幅&nbsp;&nbsp;&nbsp;简单快速</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2" style="margin-top: -20px;">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热敏</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(标配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙(选配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wifi(选配)</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：80mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：150mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：外接电源适配器</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-peiye-he">
+            <div class="swiper-container-peiye-he sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">配液盒标签</div>
+                        <div class="box">
+                            <img src="./tag/输液盒标签1.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">38mm * 60mm 和 43mm * 70mm(插卡)</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-peiye-wd">
+            <div class="swiper-container-peiye-wd sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">医疗专用腕带打印机</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/wandai.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>RFID打印&nbsp;&nbsp;&nbsp;万物物联</li>
+                                    <li>抗菌材质&nbsp;&nbsp;&nbsp;院感无忧</li>
+                                    <li>自动测纸&nbsp;&nbsp;&nbsp;即开即用</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2" style="margin-top: -20px;">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热敏</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(标配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙(选配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wifi(选配)</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：50mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：150mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：外接电源适配器</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">医用热敏腕带</div>
+                        <div class="box">
+                            <img src="./tag/儿童腕带.png" alt="" style="width: 90%;">
+                            <img src="./tag/成人腕带2.png" alt="" style="width: 90%;">
+                        </div>
+                        <div class="footer">儿童粉色、成人蓝色</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-peiye-tb">
+            <div class="swiper-container-peiye-tb sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">医疗专用贴标打印机</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/tp60.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>抗菌材质&nbsp;&nbsp;&nbsp;院感无忧</li>
+                                    <li>自动测纸&nbsp;&nbsp;&nbsp;即开即用</li>
+                                    <li>高速宽幅&nbsp;&nbsp;&nbsp;简单快速</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2" style="margin-top: -20px;">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热敏</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(标配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙(选配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wifi(选配)</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：80mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：150mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：外接电源适配器</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 护士站-住院部配液室 -->
+        <div class="mask mask-zy-peiye-tb">
+            <div class="swiper-container-zy-peiye-tb sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">医疗专用贴标打印机</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/tp60.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>抗菌材质&nbsp;&nbsp;&nbsp;院感无忧</li>
+                                    <li>自动测纸&nbsp;&nbsp;&nbsp;即开即用</li>
+                                    <li>高速宽幅&nbsp;&nbsp;&nbsp;简单快速</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2" style="margin-top: -20px;">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热敏</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(标配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙(选配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wifi(选配)</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：80mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：150mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：外接电源适配器</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mask mask-zy-peiye-wp">
+            <div class="swiper-container-zy-peiye-wp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">物品标签</div>
+                        <div class="box">
+                            <img src="./tag/物品标签.png" alt="" style="width: 25%">
+                            <img src="./tag/物品标签1.png" alt="" style="width: 25%">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-zy-peiye-syd">
+            <div class="swiper-container-zy-peiye-syd sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">输液袋/瓶标签</div>
+                        <div class="box">
+                            <img src="./tag/输液袋瓶标签.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">50mm * 70mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">输液袋/瓶标签</div>
+                        <div class="box">
+                            <img src="./tag/输液袋瓶标签1.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">50mm * 30mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">医疗专用贴标打印机</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/tp60.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>抗菌材质&nbsp;&nbsp;&nbsp;院感无忧</li>
+                                    <li>自动测纸&nbsp;&nbsp;&nbsp;即开即用</li>
+                                    <li>高速宽幅&nbsp;&nbsp;&nbsp;简单快速</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2" style="margin-top: -20px;">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热敏</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(标配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙(选配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wifi(选配)</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：80mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：150mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：外接电源适配器</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-zy-peiye-syh">
+            <div class="swiper-container-zy-peiye-syh sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">配液盒标签</div>
+                        <div class="box">
+                            <img src="./tag/输液盒标签2.png" alt="" style="width: 25%">
+                            <img src="./tag/输液盒标签3.png" alt="" style="width: 25%">
+                        </div>
+                        <div class="footer">38mm * 60mm 和 43mm * 70mm(插卡)</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 护士站-抢救车、治疗车 -->
+        <div class="mask mask-qjc-qj">
+            <div class="swiper-container-qjc-qj sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">抢救药品标签</div>
+                        <div class="box">
+                            <img src="./tag/抢救药品标签.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">抢救药品标签</div>
+                        <div class="box">
+                            <img src="./tag/抢救药品标签1.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">38mm * 60mm (高危)</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-qjc-yp">
+            <div class="swiper-container-qjc-yp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">药品标签</div>
+                        <div class="box">
+                            <img src="./tag/药品标签14.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-qjc-dm">
+            <div class="swiper-container-qjc-dm sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">地面定位标识</div>
+                        <div class="box">
+                            <img src="./tag/红白警示带.png" alt="" style="width: 80%;">
+                            <img src="./tag/绿白警示带.png" alt="" style="width: 80%;">
+                            <img src="./tag/黄黑警示带.png" alt="" style="width: 80%;">
+                        </div>
+                        <div class="footer">50mm * 50m</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 护士站 -->
+        <div class="mask mask-hushi-blc">
+            <div class="swiper-container-hushi-blc sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">病历本标识</div>
+                        <div class="box">
+                            <img src="./tag/病历本标识.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">病历本编号标识</div>
+                        <div class="box">
+                            <img src="./tag/病历本编号标识.png" alt="">
+                        </div>
+                        <div class="footer">15mm * 20mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">病历车标识</div>
+                        <div class="box">
+                            <img src="./tag/病历车标识.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-hushi-wp">
+            <div class="swiper-container-hushi-wp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">物品标签</div>
+                        <div class="box">
+                            <img src="./tag/物品标签2.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-hushi-wd">
+            <div class="swiper-container-hushi-wd sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">医疗专用腕带打印机</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/wandai.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>RFID打印&nbsp;&nbsp;&nbsp;万物物联</li>
+                                    <li>抗菌材质&nbsp;&nbsp;&nbsp;院感无忧</li>
+                                    <li>自动测纸&nbsp;&nbsp;&nbsp;即开即用</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2" style="margin-top: -20px;">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热敏</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(标配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙(选配)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wifi(选配)</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：50mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：150mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：外接电源适配器</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">医用热敏腕带</div>
+                        <div class="box">
+                            <img src="./tag/儿童腕带.png" alt="" style="width: 90%;">
+                            <img src="./tag/成人腕带2.png" alt="" style="width: 90%;">
+                        </div>
+                        <div class="footer">儿童粉色、成人蓝色</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 病房 -->
+        <div class="mask mask-bingfang-ctk">
+            <div class="swiper-container-bingfang-ctk sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">床头卡标识</div>
+                        <div class="box">
+                            <img src="./tag/床头卡标识.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">50mm * 70mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-bingfang-kg">
+            <div class="swiper-container-bingfang-kg sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">开关标识</div>
+                        <div class="mbox">
+                            <div class="size"><img src="./tag/开关标识.png" alt=""></div>
+                            <div class="size"><img src="./tag/开关标识1.png" alt=""></div>
+                        </div>
+                        <div class="footer">15mm * 20mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-bingfang-zc">
+            <div class="swiper-container-bingfang-zc sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">资产标签</div>
+                        <div class="box">
+                            <img src="./tag/资产标签.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 手术室 -->
+        <div class="mask mask-shoushu-xd">
+            <div class="swiper-container-shoushu-xd sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">二级血袋标签</div>
+                        <div class="box">
+                            <img src="./tag/二级血袋标签.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">40mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-shoushu-mj">
+            <div class="swiper-container-shoushu-mj sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">灭菌指示标签</div>
+                        <div class="box">
+                            <img src="./tag/灭菌指示标签.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">77mm * 50mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 医疗废物暂存室 -->
+        <div class="mask mask-feiwu-xsy">
+            <div class="swiper-container-feiwu-xsy sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">洗手液标识</div>
+                        <div class="box">
+                            <img src="./tag/洗手液标识.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">50mm * 30mm</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-feiwu-hj">
+            <div class="swiper-container-feiwu-hj sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">环境标识</div>
+                        <div class="box">
+                            <img src="./tag/环境标识.png" alt="" style="width: 25%;">
+                        </div>
+                        <div class="footer">22cm * 30cm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">环境标识</div>
+                        <div class="box">
+                            <img src="./tag/环境标识1.png" alt="" style="width: 25%;">
+                        </div>
+                        <div class="footer">22cm * 30cm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">环境标识</div>
+                        <div class="box">
+                            <img src="./tag/环境标识2.png" alt="" style="width: 25%;">
+                        </div>
+                        <div class="footer">22cm * 30cm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">环境标识</div>
+                        <div class="box">
+                            <img src="./tag/环境标识3.png" alt="" style="width: 27%;">
+                            <img src="./tag/环境标识4.png" alt="" style="width: 27%;">
+                            <img src="./tag/环境标识5.png" alt="" style="width: 27%;">
+                        </div>
+                        <div class="footer">12cm * 30cm</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-feiwu-dm">
+            <div class="swiper-container-feiwu-dm sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">地面定位标识</div>
+                        <div class="box">
+                            <img src="./tag/红白警示带.png" alt="" style="width: 80%;">
+                            <img src="./tag/绿白警示带.png" alt="" style="width: 80%;">
+                            <img src="./tag/黄黑警示带.png" alt="" style="width: 80%;">
+                        </div>
+                        <div class="footer">50mm * 50m</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 卫生间 -->
+        <div class="mask mask-weisheng-xsy">
+            <div class="swiper-container-weisheng-xsy sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">洗手液标识</div>
+                        <div class="box">
+                            <img src="./tag/洗手液标识.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="footer">50mm * 20mm</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-weisheng-hj">
+            <div class="swiper-container-weisheng-hj sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">环境标识</div>
+                        <div class="box">
+                            <img src="./tag/环境标识6.png" alt="" style="padding-top: 3rem;">
+                        </div>
+                        <div class="footer">300mm * 100mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">环境标识</div>
+                        <div class="mbox">
+                            <div class="size"><img src="./tag/环境标识7.png" alt="" style="padding-top: 3rem;"></div>
+                            <div class="size"><img src="./tag/环境标识8.png" alt="" style="padding-top: 3rem;"></div>
+                        </div>
+                        <div class="footer">200mm * 100mm</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-weisheng-dm">
+            <div class="swiper-container-weisheng-dm sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">地面定位标识</div>
+                        <div class="box">
+                            <img src="./tag/红白警示带.png" alt="" style="width: 80%;">
+                            <img src="./tag/绿白警示带.png" alt="" style="width: 80%;">
+                            <img src="./tag/黄黑警示带.png" alt="" style="width: 80%;">
+                        </div>
+                        <div class="footer">50mm * 50m</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 人事办公室 -->
+        <div class="mask mask-renshi-wp">
+            <div class="swiper-container-renshi-wp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">物品标签</div>
+                        <div class="box">
+                            <img src="./tag/物品标签3.png" alt="">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-renshi-gd">
+            <div class="swiper-container-renshi-gd sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">固定自产标签</div>
+                        <div class="box">
+                            <img src="./tag/资产标签.png" alt="" style="width: 50%">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-renshi-p50">
+            <div class="swiper-container-renshi-p50 sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mask mask-renshi-kg">
+            <div class="swiper-container-renshi-kg sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">开关标签</div>
+                        <div class="mbox">
+                            <div class="size"><img src="./tag/开关标签s.png" alt=""></div>
+                            <div class="size"><img src="./tag/开关标签.png" alt="" style="padding-top: 15px;"></div>
+                        </div>
+                        <div class="footer">15m * 20mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 5s文件定位标识 -->
+        <div class="mask mask-s-5s">
+            <div class="swiper-container-s-5s sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">5s彩色定位标签</div>
+                        <div class="mbox" style="padding-top: 3rem;">
+                            <div class="size"><img src="./tag/定位标1.png" alt=""></div>
+                            <div class="size"><img src="./tag/定位标2.png" alt=""></div>
+                            <div class="size"><img src="./tag/定位标3.png" alt=""></div>
+                            <div class="size"><img src="./tag/定位标4.png" alt=""></div>
+                        </div>
+                        <div class="footer">D22-18</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-s-wp">
+            <div class="swiper-container-s-wp sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">物品标签</div>
+                        <div class="box">
+                            <img src="./tag/物品标签5.png" alt="" style="padding-top: 3rem;">
+                        </div>
+                        <div class="footer">50mm * 20mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">物品标签</div>
+                        <div class="box">
+                            <img src="./tag/物品标签4.png" alt="" style="padding-top: 4rem;">
+                        </div>
+                        <div class="footer">17mm * 70mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-s-wjj">
+            <div class="swiper-container-s-wjj sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">文件夹名称标签</div>
+                        <div class="box">
+                            <img src="./tag/文件夹.png" alt="" style="width: 10%">
+                        </div>
+                        <div class="footer">22mm * 150mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">文件夹名称标签</div>
+                        <div class="box">
+                            <img src="./tag/文件夹名称标签1.png" alt="" style="padding-top: 2rem;">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">文件夹名称标签</div>
+                        <div class="box">
+                            <img src="./tag/文件夹名称标签.png" alt="" style="padding-top: 3rem;">
+                        </div>
+                        <div class="footer">50mm * 20mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 库房 -->
+        <div class="mask mask-kufang-hj">
+            <div class="swiper-container-kufang-hj sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">货架标签</div>
+                        <div class="box">
+                            <img src="./tag/物资标签.png" alt="" style="padding-top: 2rem;">
+                        </div>
+                        <div class="footer">38mm * 60mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-kufang-dm">
+            <div class="swiper-container-kufang-dm sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">地面定位标识</div>
+                        <div class="box">
+                            <img src="./tag/红白警示带.png" alt="" style="width: 80%;">
+                            <img src="./tag/绿白警示带.png" alt="" style="width: 80%;">
+                            <img src="./tag/黄黑警示带.png" alt="" style="width: 80%;">
+                        </div>
+                        <div class="footer">50mm * 50m</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 数据机房 -->
+        <div class="mask mask-shuju-zxj">
+            <div class="swiper-container-shuju-zxj sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">走线架标签</div>
+                        <div class="box">
+                            <img src="./tag/走线架1.png" alt="" style="padding-top: 3rem;width: 50%">
+                            <img src="./tag/走线架2.png" alt="" style="width: 50%">
+                        </div>
+                        <div class="footer">28mm * 200mm</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-shuju-xl">
+            <div class="swiper-container-shuju-xl sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">线缆标签</div>
+                        <div class="box">
+                            <img src="./tag/线缆标签.png" alt="" style="padding-top: 2rem;width: 60%">
+                        </div>
+                        <div class="footer">QS-02F</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">机架标签</div>
+                        <div class="box">
+                            <img src="./tag/机架标签.png" alt="" style="padding-top: 2rem;width: 60%">
+                        </div>
+                        <div class="footer">D22-18</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="mask mask-shuju-p50">
+            <div class="swiper-container-shuju-p50 sc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title">P50A-2N打印机图片及参数</div>
+                        <div class="print-box">
+                            <div class="left">
+                                <img src="./tag/p50.png" alt="">
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>无线连接&nbsp;&nbsp;&nbsp;手机操控</li>
+                                    <li>OLED显示屏&nbsp;&nbsp;&nbsp;一目了然</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="left">
+                                <div>•&nbsp;&nbsp;打印方式：热转印</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;分辨率：203DPI</div>
+                            </div>
+                            <div class="mid1">
+                                <div>•&nbsp;&nbsp;打印接口：USB(2.0)</div>
+                                <div style="margin-top: 0.5rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蓝牙、NFC</div>
+                            </div>
+                            <div class="mid2">
+                                <div>•&nbsp;&nbsp;打印宽度：48mm</div>
+                                <div style="margin-top: 0.5rem">•&nbsp;&nbsp;打印速度：25.4mm/s</div>
+                            </div>
+                            <div class="right">
+                                <div>•&nbsp;&nbsp;电源：2200mAh</div>
+                                <div>•&nbsp;&nbsp;支持一维码和二维码打印</div>
+                                <div>•&nbsp;&nbsp;可导数据库批量打印</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -------------------- 标签 -------------------- -->
+
+    <!--  -------------------- 底部导航条 -------------------- -->
+    <div>
+        <div class="nav">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide s1">1.医院</div>
+                    <div class="swiper-slide s2">2.门诊</div>
+                    <div class="swiper-slide s3">3.住院楼</div>
+                    <div class="swiper-slide s4">4.行政办公楼</div>
+                    <div class="swiper-slide s5">5.药房</div>
+                    <div class="swiper-slide s6">6.检验科</div>
+                    <div class="swiper-slide s7">7.门诊配液室</div>
+                    <div class="swiper-slide s8">8.护士站</div>
+                    <div class="swiper-slide s9">9.住院部配液室</div>
+                    <div class="swiper-slide s10">10.病房</div>
+                    <div class="swiper-slide s11">11.手术室</div>
+                    <div class="swiper-slide s12">12.卫生间</div>
+                    <div class="swiper-slide s13">13.抢救车、治疗车</div>
+                    <div class="swiper-slide s14">14.医疗废物暂存室</div>
+                    <div class="swiper-slide s15">15.库房</div>
+                    <div class="swiper-slide s16">16.数据机房</div>
+                    <div class="swiper-slide s17">17.人事办公室</div>
+                    <div class="swiper-slide s18">18.5s文件定位标识</div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-down">
+            <img src="./img/down.png" alt="">
+        </div>
+        <div class="back-main">回到首页</div>
+    </div>
+    <!--  -------------------- 底部导航条 -------------------- -->
+
+    <div class="pt-message">
+        <p>您的浏览器不支持 CSS animations.</p>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/yiliao.js"></script>
+</body>
+
+</html>

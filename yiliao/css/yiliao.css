@@ -1,0 +1,727 @@
+.pt-page .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pt-page .back .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.pt-page .back .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.pt-page .box {
+    position: absolute;
+    cursor: pointer;
+}
+
+.pt-page .box .title {
+    text-align: center;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 6px #000;
+}
+
+.pt-page .box .pos {
+    position: absolute;
+    width: 1.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.pt-page .banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #393939;
+    z-index: 999;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.pt-page .banner .back {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 5px 8px 5px 8px;
+    box-sizing: border-box;
+}
+
+.pt-page .banner .back:hover {
+    cursor: pointer;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #393939;
+    transition: all 0.5s;
+}
+
+.nav .swiper-slide {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav .swiper-slide:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: #fff;
+}
+
+.nav .swiper-slide.swiper-slide-active {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #FF3136;
+}
+
+.nav-down {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 41px;
+    background: #393939;
+    padding: 2px 7px 2px 7px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav-down:hover {
+    background: #4A4A4A;
+}
+
+.nav-down:active {
+    background: #4A4A4A;
+}
+
+.nav-down img {
+    transform: scale(0.7);
+}
+
+.nav.down {
+    bottom: -41px;
+}
+
+.nav-down.down {
+    bottom: 0;
+}
+
+.back-main.down {
+    bottom: 0;
+}
+
+.back-main {
+    position: fixed;
+    left: 0;
+    bottom: 41px;
+    background: #393939;
+    padding: 2px 7px 2px 7px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 300;
+    display: none;
+}
+
+.mask .sc {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background: rgba(126, 149, 183, 0.8);
+    border-radius: .9375rem;
+    z-index: 999;
+}
+
+.mask .swiper-slide {
+    position: relative;
+}
+
+.mask .swiper-slide .title {
+    text-align: center;
+    margin-top: .9375rem;
+    font-size: 1.1rem;
+}
+
+.mask .swiper-slide .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+}
+
+.mask .swiper-slide .footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0.5rem;
+    left: 0;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.mask .swiper-slide .box img {
+    width: 40%;
+    display: block;
+    margin: 15px auto;
+}
+
+.mask .swiper-slide .mbox {
+    padding-top: 15px;
+}
+
+.mask .swiper-slide .mbox .size {
+    position: relative;
+    width: 50%;
+    float: left;
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+.mask .swiper-slide .mbox .size:nth-child(odd) {
+    padding: 15px 1rem 0 6rem;
+}
+
+.mask .swiper-slide .mbox .size:nth-child(even) {
+    padding: 15px 6rem 0 1rem;
+}
+
+.mask .swiper-slide .mbox .size img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.mask .swiper-slide .print-box {
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.mask .swiper-slide .print-box .left {
+    width: 50%;
+    float: left;
+    height: 200px;
+    position: relative;
+}
+
+.mask .swiper-slide .print-box .left img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 65%;
+}
+
+.mask .swiper-slide .print-box .right {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mask .swiper-slide .print-box .right ul {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    font-weight: bold;
+}
+
+.mask .swiper-slide .print-box .right ul li {
+    margin-top: 0.3rem;
+}
+
+.mask .swiper-slide .footer2 {
+    height: 30%;
+    overflow: hidden;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.mask .swiper-slide .footer2 .left {
+    width: 23%;
+    height: 100%;
+    float: left;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+
+.mask .swiper-slide .footer2 .left:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 50%;
+    background: #fff;
+}
+
+.mask .swiper-slide .footer2 .mid1,
+.mask .swiper-slide .footer2 .mid2 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding-top: 1.5rem;
+    position: relative;
+}
+
+.mask .swiper-slide .footer2 .mid1 {
+    padding-left: 0.8rem;
+}
+
+.mask .swiper-slide .footer2 .mid2 {
+    padding-left: 0.6rem;
+}
+
+.mask .swiper-slide .footer2 .mid2:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 50%;
+    background: #fff;
+}
+
+.mask .swiper-slide .footer2 .right {
+    width: 25%;
+    height: 100%;
+    float: right;
+    padding-top: 1.5rem;
+    padding-left: -15px;
+}
+
+
+
+
+/*医院*/
+
+.pt-page .box.yiyuan-xz {
+    top: 57%;
+    left: 17%;
+}
+
+.pt-page .box.yiyuan-zy {
+    top: 39%;
+    left: 35%;
+}
+
+.pt-page .box.yiyuan-mz {
+    top: 60%;
+    left: 55%;
+}
+
+
+
+
+/*门诊*/
+
+.pt-page .box.menzhen-yf {
+    top: 28%;
+    left: 10%;
+}
+
+.pt-page .box.menzhen-jyk {
+    top: 33%;
+    left: 43%;
+}
+
+.pt-page .box.menzhen-pys {
+    top: 39%;
+    left: 69%;
+}
+
+
+
+
+/*药房*/
+
+.pt-page .box.yaofang-gjs {
+    top: 43%;
+    left: 1%;
+}
+
+.pt-page .box.yaofang-yp {
+    top: 42%;
+    left: 40%;
+}
+
+.pt-page .box.yaofang-yz {
+    top: 34%;
+    left: 78%;
+}
+
+
+
+
+/*检验科*/
+
+.pt-page .box.jianyan-5s {
+    top: 79%;
+    left: 5%;
+}
+
+.pt-page .box.jianyan-sg {
+    top: 60%;
+    left: 30%;
+}
+
+.pt-page .box.jianyan-tp {
+    top: 27%;
+    left: 70%;
+}
+
+
+
+
+/*门诊配液室*/
+
+.pt-page .box.peiye-dai {
+    top: 33%;
+    left: 66%;
+}
+
+.pt-page .box.peiye-he {
+    top: 32%;
+    left: 33%;
+}
+
+.pt-page .box.peiye-wd {
+    top: 77%;
+    left: 25%;
+}
+
+.pt-page .box.peiye-tb {
+    top: 70%;
+    left: 73%;
+}
+
+
+
+
+/*住院部*/
+
+.pt-page .box.zhuyuan-fw {
+    top: 40%;
+    left: 3%;
+}
+
+.pt-page .box.zhuyuan-jjc {
+    top: 43%;
+    left: 31%;
+}
+
+.pt-page .box.zhuyuan-bf {
+    top: 40%;
+    left: 45%;
+}
+
+.pt-page .box.zhuyuan-sss {
+    top: 40%;
+    left: 59%;
+}
+
+.pt-page .box.zhuyuan-wsj {
+    top: 45%;
+    left: 94%;
+}
+
+.pt-page .box.zhuyuan-hsz {
+    top: 70%;
+    left: 50%;
+}
+
+
+
+
+/*护士站*/
+
+.pt-page .box.hushi-py {
+    top: 45%;
+    left: 10%;
+}
+
+.pt-page .box.hushi-qjc {
+    top: 45%;
+    left: 27%;
+}
+
+.pt-page .box.hushi-blc {
+    top: 50%;
+    left: 42%;
+}
+
+.pt-page .box.hushi-wp {
+    top: 52%;
+    left: 63%;
+}
+
+.pt-page .box.hushi-wd {
+    top: 64%;
+    left: 74%;
+}
+
+
+
+
+/*住院部配液室*/
+
+.pt-page .box.zy-peiye-tb {
+    top: 70%;
+    left: 5%;
+}
+
+.pt-page .box.zy-peiye-wp {
+    top: 64%;
+    left: 43.5%;
+}
+
+.pt-page .box.zy-peiye-syd {
+    top: 53%;
+    left: 23%;
+}
+
+.pt-page .box.zy-peiye-syh {
+    top: 51%;
+    left: 58%;
+}
+
+
+
+
+/*抢救车、治疗车*/
+
+.pt-page .box.zlche-qj {
+    top: 23%;
+    left: 32%;
+}
+
+.pt-page .box.zlche-yp {
+    top: 7%;
+    left: 58%;
+}
+
+.pt-page .box.zlche-dm {
+    top: 80%;
+    left: 48%;
+}
+
+
+
+
+/*病房*/
+
+.pt-page .box.bingfang-ctk {
+    top: 26%;
+    left: 17%;
+}
+
+.pt-page .box.bingfang-kg {
+    top: 29%;
+    left: 28.5%;
+}
+
+.pt-page .box.bingfang-zc {
+    top: 56%;
+    left: 12%;
+}
+
+
+
+
+/*手术室*/
+
+.pt-page .box.shoushu-xd {
+    top: 55%;
+    left: 3%;
+}
+
+.pt-page .box.shoushu-mj {
+    top: 80%;
+    left: 75%;
+}
+
+
+
+
+/*医疗废物暂存室*/
+
+.pt-page .box.feiwu-xsy {
+    top: 32%;
+    left: 10%;
+}
+
+.pt-page .box.feiwu-hj {
+    top: 15%;
+    left: 57%;
+}
+
+.pt-page .box.feiwu-dm {
+    top: 80%;
+    left: 50%;
+}
+
+
+
+
+/*卫生间*/
+
+.pt-page .box.weisheng-xsy {
+    top: 50%;
+    left: 76.5%;
+}
+
+.pt-page .box.weisheng-hj {
+    top: 48%;
+    left: 5.5%;
+}
+
+.pt-page .box.weisheng-dm {
+    top: 68.5%;
+    left: 3%;
+}
+
+
+
+
+/*行政办公楼*/
+
+.pt-page .box.xingzheng-kf {
+    top: 50%;
+    left: 41%;
+}
+
+.pt-page .box.xingzheng-sj {
+    top: 45%;
+    left: 47%;
+}
+
+.pt-page .box.xingzheng-rs {
+    top: 50%;
+    left: 63%;
+}
+
+
+
+
+/*人事办公室*/
+
+.pt-page .box.renshi-wp {
+    top: 39%;
+    left: 9%;
+}
+
+.pt-page .box.renshi-5s {
+    top: 25%;
+    left: 13%;
+}
+
+.pt-page .box.renshi-gd {
+    top: 42%;
+    left: 31%;
+}
+
+.pt-page .box.renshi-p50 {
+    top: 52%;
+    left: 42.5%;
+}
+
+.pt-page .box.renshi-kg {
+    top: 25%;
+    left: 63.5%;
+}
+
+
+
+
+/*库房*/
+
+.pt-page .box.kufang-hj {
+    top: 46%;
+    left: 54%;
+}
+
+.pt-page .box.kufang-dm {
+    top: 76%;
+    left: 77%;
+}
+
+
+
+
+/*数据机房*/
+
+.pt-page .box.shuju-zxj {
+    top: 8%;
+    left: 42%;
+}
+
+.pt-page .box.shuju-xl {
+    top: 25%;
+    left: 47%;
+}
+
+.pt-page .box.shuju-p50 {
+    top: 52%;
+    left: 32%;
+}
+
+
+
+
+/*5s*/
+
+.pt-page .box.s-5s {
+    top: 29%;
+    left: 18%;
+}
+
+.pt-page .box.s-wp {
+    top: 36%;
+    left: 67%;
+}
+
+.pt-page .box.s-wjj {
+    top: 65%;
+    left: 17.8%;
+}
