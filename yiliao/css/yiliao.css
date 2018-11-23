@@ -145,7 +145,6 @@
     cursor: pointer;
 }
 
-
 .mask {
     position: fixed;
     top: 0;
@@ -172,6 +171,7 @@
 
 .mask .swiper-slide {
     position: relative;
+    overflow-y: auto;
 }
 
 .mask .swiper-slide .title {
@@ -227,8 +227,6 @@
     height: 100%;
 }
 
-
-
 .mask .swiper-slide .print-box {
     margin-top: 0.5rem;
     overflow: hidden;
@@ -247,6 +245,8 @@
     left: 50%;
     transform: translate(-40%, -50%);
     width: 65%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .mask .swiper-slide .print-box .right {
@@ -268,30 +268,32 @@
 }
 
 .mask .swiper-slide .footer2 {
-    height: 30%;
+    /* height: 100px; */
     overflow: hidden;
     font-size: 0.7rem;
     text-align: left;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .mask .swiper-slide .footer2 .left {
-    width: 23%;
+    width: 25%;
     height: 100%;
     float: left;
-    padding-top: 1.5rem;
-    padding-left: 1rem;
+    /* padding-top: 1.5rem; */
+    padding-left: 15px;
     position: relative;
+    word-break: break-all;
 }
-
 
 .mask .swiper-slide .footer2 .left:after {
     content: '';
     position: absolute;
     right: 0;
-    top: 45%;
-    transform: translate(0, -50%);
+    top: 0;
+    /* transform: translate(0, -50%); */
     width: 1px;
-    height: 50%;
+    height: 100px;
     background: #fff;
 }
 
@@ -300,12 +302,14 @@
     width: 25%;
     height: 100%;
     float: left;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     position: relative;
+    word-break: break-all;
 }
 
 .mask .swiper-slide .footer2 .mid1 {
-    padding-left: 0.8rem;
+    padding-right: 1rem;
+    text-align: right;
 }
 
 .mask .swiper-slide .footer2 .mid2 {
@@ -316,10 +320,10 @@
     content: '';
     position: absolute;
     right: 0;
-    top: 45%;
-    transform: translate(0, -50%);
+    top: 0;
+    /* transform: translate(0, -50%); */
     width: 1px;
-    height: 50%;
+    height: 100px;
     background: #fff;
 }
 
@@ -327,12 +331,50 @@
     width: 25%;
     height: 100%;
     float: right;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     padding-left: -15px;
+    word-break: break-all;
 }
 
+.loading {
+    display: block;
+    position: fixed;
+    font-size: 1.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 15px 20px 15px 20px;
+    color: rgb(87, 87, 87);
+    box-sizing: border-box;
+    z-index: 2000;
+    border-radius: 7px;
+}
 
+.disactive {
+    display: none;
+}
 
+.run-loader {
+    width: 43px;
+    height: 43px;
+    box-sizing: border-box;
+    border: 5px solid rgb(87, 87, 87);
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: loader-rotate 1s linear infinite;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+@keyframes loader-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /*医院*/
 
@@ -351,9 +393,6 @@
     left: 55%;
 }
 
-
-
-
 /*门诊*/
 
 .pt-page .box.menzhen-yf {
@@ -370,9 +409,6 @@
     top: 39%;
     left: 69%;
 }
-
-
-
 
 /*药房*/
 
@@ -391,9 +427,6 @@
     left: 78%;
 }
 
-
-
-
 /*检验科*/
 
 .pt-page .box.jianyan-5s {
@@ -410,9 +443,6 @@
     top: 27%;
     left: 70%;
 }
-
-
-
 
 /*门诊配液室*/
 
@@ -435,9 +465,6 @@
     top: 70%;
     left: 73%;
 }
-
-
-
 
 /*住院部*/
 
@@ -471,9 +498,6 @@
     left: 50%;
 }
 
-
-
-
 /*护士站*/
 
 .pt-page .box.hushi-py {
@@ -501,9 +525,6 @@
     left: 74%;
 }
 
-
-
-
 /*住院部配液室*/
 
 .pt-page .box.zy-peiye-tb {
@@ -526,9 +547,6 @@
     left: 58%;
 }
 
-
-
-
 /*抢救车、治疗车*/
 
 .pt-page .box.zlche-qj {
@@ -545,9 +563,6 @@
     top: 80%;
     left: 48%;
 }
-
-
-
 
 /*病房*/
 
@@ -566,9 +581,6 @@
     left: 12%;
 }
 
-
-
-
 /*手术室*/
 
 .pt-page .box.shoushu-xd {
@@ -580,9 +592,6 @@
     top: 80%;
     left: 75%;
 }
-
-
-
 
 /*医疗废物暂存室*/
 
@@ -601,9 +610,6 @@
     left: 50%;
 }
 
-
-
-
 /*卫生间*/
 
 .pt-page .box.weisheng-xsy {
@@ -621,9 +627,6 @@
     left: 3%;
 }
 
-
-
-
 /*行政办公楼*/
 
 .pt-page .box.xingzheng-kf {
@@ -640,9 +643,6 @@
     top: 50%;
     left: 63%;
 }
-
-
-
 
 /*人事办公室*/
 
@@ -671,9 +671,6 @@
     left: 63.5%;
 }
 
-
-
-
 /*库房*/
 
 .pt-page .box.kufang-hj {
@@ -685,9 +682,6 @@
     top: 76%;
     left: 77%;
 }
-
-
-
 
 /*数据机房*/
 
@@ -705,9 +699,6 @@
     top: 52%;
     left: 32%;
 }
-
-
-
 
 /*5s*/
 

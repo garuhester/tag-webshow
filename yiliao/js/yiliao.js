@@ -1,11 +1,11 @@
-window.onload = function() {
+window.onload = function () {
 
     init();
 
     //初始化
     function init() {
         goDiv("pt-page-1", 22);
-        $(".nav-down").click(function() {
+        $(".nav-down").click(function () {
             var img = document.querySelector(".nav-down img");
             if (img.src.indexOf("down") != -1) {
                 img.src = "./img/up.png";
@@ -16,12 +16,13 @@ window.onload = function() {
             $(".nav").toggleClass("down");
             $(".back-main").toggleClass("down");
         });
-        window.onresize = function() {
+        window.onresize = function () {
             window.location.reload();
         }
 
         registSwiper();
         registClick();
+        $(".loading").addClass("disactive");
     }
 
     //注册滑动组件
@@ -163,8 +164,8 @@ window.onload = function() {
     function doClick(type, objs, goDivName, slideIndex) {
         if (type == 1) {
             for (var i = 0; i < objs.length; i++) {
-                (function(i) {
-                    $("." + objs[i]).click(function() {
+                (function (i) {
+                    $("." + objs[i]).click(function () {
                         goDiv(goDivName, 22);
                         navSwiper.slideTo(slideIndex, 500, false);
                     });
@@ -172,8 +173,8 @@ window.onload = function() {
             }
         } else if (type == -1) {
             for (var i = 0; i < objs.length; i++) {
-                (function(i) {
-                    backDiv(objs[i], function() {
+                (function (i) {
+                    backDiv(objs[i], function () {
                         goDiv(goDivName, 22);
                         navSwiper.slideTo(slideIndex, 500, false);
                     });
@@ -242,10 +243,10 @@ window.onload = function() {
         showTag({ "shuju-xl": 0 }, "mask-shuju-xl", shuju_xlSwiper);
         showTag({ "shuju-p50": 0 }, "mask-shuju-p50", shuju_p50Swiper);
 
-        $(".mask").click(function() {
+        $(".mask").click(function () {
             $(".mask").hide();
         });
-        $(".sc").click(function(e) {
+        $(".sc").click(function (e) {
             e.stopPropagation();
         });
     }
@@ -253,8 +254,8 @@ window.onload = function() {
     //显示标签
     function showTag(data, sobj, swiper) {
         for (var j in data) {
-            (function(j) {
-                $("." + j).click(function() {
+            (function (j) {
+                $("." + j).click(function () {
                     $(".mask." + sobj).show();
                     $(".mask." + sobj).addClass("pt-page-scaleUp");
                     swiper.slideTo(data[j], 500, false);
@@ -266,7 +267,7 @@ window.onload = function() {
 
     //返回页面
     function backDiv(obj, fun) {
-        $("." + obj).click(function() {
+        $("." + obj).click(function () {
             fun();
         });
     }
