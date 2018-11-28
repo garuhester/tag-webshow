@@ -37,6 +37,7 @@
     position: absolute;
     width: 1.5rem;
     left: 50%;
+    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
 }
 
@@ -56,8 +57,10 @@
     position: absolute;
     left: 10px;
     top: 50%;
+    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     padding: 5px 8px 5px 8px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -70,6 +73,7 @@
     bottom: 0;
     left: 0;
     background: #393939;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -90,6 +94,7 @@
     height: 60%;
     right: 0;
     top: 50%;
+    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     background: #fff;
 }
@@ -103,10 +108,12 @@
 .nav-down {
     position: fixed;
     left: 50%;
+    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     bottom: 41px;
     background: #393939;
     padding: 2px 7px 2px 7px;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -120,6 +127,7 @@
 }
 
 .nav-down img {
+    -webkit-transform: scale(0.7);
     transform: scale(0.7);
 }
 
@@ -141,6 +149,7 @@
     bottom: 41px;
     background: #393939;
     padding: 2px 7px 2px 7px;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -162,6 +171,7 @@
     height: 60%;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     overflow: hidden;
     background: rgba(126, 149, 183, 0.8);
@@ -211,6 +221,7 @@
     width: 50%;
     float: left;
     font-size: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -243,9 +254,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-40%, -50%);
     transform: translate(-40%, -50%);
     width: 65%;
     height: 100%;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -344,10 +357,12 @@
     font-size: 1.2rem;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: #fff;
     padding: 15px 20px 15px 20px;
     color: rgb(87, 87, 87);
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 2000;
     border-radius: 7px;
@@ -360,20 +375,35 @@
 .run-loader {
     width: 43px;
     height: 43px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 5px solid rgb(87, 87, 87);
     border-right-color: transparent;
     border-radius: 50%;
+    -webkit-animation: loader-rotate 1s linear infinite;
     animation: loader-rotate 1s linear infinite;
     margin: 0 auto;
     margin-bottom: 5px;
 }
 
-@keyframes loader-rotate {
+@-webkit-keyframes loader-rotate {
     0% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
     100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-rotate {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
